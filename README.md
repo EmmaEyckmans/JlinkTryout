@@ -20,5 +20,5 @@ jlink --module-path $modulepath$
       --add-modules $modules$  
       --output      $output$  
 * $modulepath$: path of directories containing the packaged modules (jar or jmod format)  
-* $modules$: names the modules to add to the run-time image. These modules   
-* $output$: name of the output application  
+* $modules$: names the modules to add to the run-time image. These modules can, via transitive dependencies, cause additional modules to be added.
+* $output$: directory that will contain the resulting run-time image
