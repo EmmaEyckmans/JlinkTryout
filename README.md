@@ -22,3 +22,5 @@ jlink --module-path $modulepath$
 * $modulepath$: path of directories containing the packaged modules (jar or jmod format)  
 * $modules$: names the modules to add to the run-time image. These modules can, via transitive dependencies, cause additional modules to be added.
 * $output$: directory that will contain the resulting run-time image
+The result is a new directory $output$ containing essentially a Java runtime completely tailored to running your application. 
+The folder contains a bin folder with an executable script directly launching your module.
